@@ -8,7 +8,7 @@ func GetMySQLDB() (db *sql.DB, err error) {
 	dbDriver := "mysql"
 	dbUser := "root"
 	dbPass := "123456"
-	dbName := "learngodb"
+	dbName := "usermodeldb"
 	db, err = sql.Open(dbDriver, dbUser + ":" + dbPass + "@/" + dbName)
 	return
 }
